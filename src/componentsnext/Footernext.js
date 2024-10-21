@@ -4,42 +4,18 @@ import face from '../assets/face.png';
 import twit from '../assets/twit.png';
 import link from '../assets/link.png';
 import pin from '../assets/pin.png';
-import minion from '../assets/minion.png';
 
-export default function Footer() {
+
+export default function Footernext() {
   const [activeIndex, setActiveIndex] = useState(null);
-
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-  const [showPopup, setShowPopup] = useState(false);
-  const openPopup = () => {
-    setShowPopup(true);
-  };
-
-  const closePopup = () => {
-    setShowPopup(false);
-  };
-
-  
-
+ 
   return (
-    <footer className="relative bg-gradient-to-r from-indigo-900 to-blue-800 text-white xl:pt-40 pt-20 xl:pb-20 pl-20 pr-10 leading-loose">
+    <footer className="relative bg-gradient-to-r from-indigo-900 to-blue-800 text-white xl:pt-40 xl:pt-20 xl:pb-5 pl-20 pr-10 leading-loose">
      
     <nav className="hidden md:block">
-      <div className=" xl:absolute bg-white xl:pt-10 xl:pb-10 xl:pl-12 xl:pr-32 xl:items-center xl:justify-between xl:-mb-[700px] xl:-mt-[240px] xl:-ml-2 shadow-lg border border-gray-500 rounded-[10px] hidden md:block">
-        <div className="max-w-xl flex-wrap">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Looking For Business Opportunity?</h2>
-          <p className="text-gray-500">Lorem Ipsum is simply dummy the industry’s standard dummy text.</p>
-        </div>
-        <div className="xl:ml-[550px] xl:-mt-[60px]">
-          <a href="https://softek.radiantthemes.com/" className="box-class">
-            Get In Touch
-          </a>
-        </div>
-      </div>
-
-      
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-20 ">
         <div>
         <img className='mb-5' src={Logo} alt='https://softek.radiantthemes.com'/>
@@ -83,8 +59,8 @@ export default function Footer() {
     </div>
     </nav>
 <nav className="block md:hidden block">
-      <div className="  container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-20 ">
-        <div>
+      <div className="  container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 mb-20 -mt-20">
+        <div className="pt-10">
           <img className="mb-5" src={Logo} alt="Logo" />
           <p className="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
         </div>
@@ -160,67 +136,6 @@ export default function Footer() {
       </div>
       <div >
       
-      {showPopup && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Login</h2>
-            <form>
-              <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
-                  Username
-                </label>
-                <input
-                  type="text"
-                  id="username"
-                  className="w-full p-3 border rounded-md text-black focus:outline-none focus:ring focus:ring-indigo-500"
-                  placeholder="Enter your username"
-                />
-              </div>
-              <div className="mb-6">
-                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-                  Password
-                </label>
-                <input
-                  type="password"
-                  id="password"
-                  className="w-full p-3 border rounded-md text-black focus:outline-none focus:ring focus:ring-indigo-500"
-                  placeholder="Enter your password"
-                />
-              </div>
-              <div className="flex items-center justify-between">
-                <button
-                  type="submit"
-                  className="bg-indigo-500 text-white font-bold py-2 px-4 rounded hover:bg-indigo-600 focus:outline-none focus:ring focus:ring-indigo-500"
-                >
-                  Login
-                </button>
-                <button
-                  type="button"
-                  onClick={closePopup}
-                  className="text-gray-500 hover:text-gray-700"
-                >
-                  Cancel
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
-
-     
-      <section
-        className="fixed right-0 bottom-0 xl:mb-0 lg:mb-0 md:mb-12 mb-4 xl:mr-4 lg:mr-4 md:mr-4 mr-0 xl:p-8 lg:p-4 p-4"
-        style={{ zIndex: 999 }}
-      >
-       
-          <div>
-            <img onClick={openPopup} className="w-24 animate-float cursor-pointer" src={minion} alt="minion" />
-            <h1 className="ml-9 animate-float cursor-pointer text-yellow-400">
-              <i>Login</i>
-            </h1>
-            </div>
-       
-      </section>
     </div>
     </footer>
   );

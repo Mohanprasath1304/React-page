@@ -2,7 +2,8 @@ import React from "react";
 
 import Home from './Home';
 import Dashboard from "./Dashboard";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Contectpage from "./Contectpage";
+import { BrowserRouter,Routes,Route, } from "react-router-dom";
   
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="/Contectpage" element={<Contectpage/>}/>
   
   
 
@@ -23,5 +25,5 @@ function App() {
     </div>
   );
 }
-  
+
 export default App;

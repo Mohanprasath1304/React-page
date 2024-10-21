@@ -9,7 +9,7 @@ export default function Card(){
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
    
     <div class="xl:p-[40px] text-center">
-      <div class="bg-white xl:w-[270px] xl:p-6 rounded-md shadow-md xl:text-center">
+      <div class="bg-white xl:w-[270px] xl:p-6 rounded-md shadow-md xl:text-center transition-transform duration-500 ease-in-out hover:scale-105">
         <img class="c1img mx-auto" src={Card1} alt="Card" />
         <h2 class="text-xl font-semibold mb-2">Social Media Plan</h2>
         <p class="text-gray-600">Lorem Ipsum is simply dummy text of the printing.</p>
@@ -18,7 +18,7 @@ export default function Card(){
 
    
     <div class="xl:pt-[50px] xl:pl-[25px] xl:ml-32 xl:mt-3">
-      <div class="bg-white xl:w-[270px] xl:p-6 rounded-md shadow-md xl:text-center text-center">
+      <div class="bg-white xl:w-[270px] xl:p-6 rounded-md shadow-md xl:text-center text-center transition-transform duration-500 ease-in-out hover:scale-105">
         <img class="c1img mx-auto" src={Card2} alt="Card" />
         <h2 class="text-xl font-semibold mb-2">Digital Marketing</h2>
         <p class="text-gray-600">Vivamus ullamcorper text of the printing and typesetting.</p>
@@ -26,8 +26,8 @@ export default function Card(){
     </div>
 
    
-    <div class="xl:ml-4 xl:-mt-10 xl:-pt-5 xl:ml-10 text-center">
-      <div class="bg-white xl:w-[270px] xl:p-6 rounded-md shadow-md xl:text-center">
+    <div class="xl:ml-4 xl:-mt-10 xl:-pt-5 xl:ml-[40px] text-center">
+      <div class="bg-white xl:w-[270px] xl:p-6 rounded-md shadow-md xl:text-center transition-transform duration-500 ease-in-out hover:scale-105">
         <img class="c1img mx-auto" src={Card3} alt="Card" />
         <h2 class="text-xl font-semibold mb-2">Business Idea</h2>
         <p class="text-gray-600">Vivamus ullamcorper text of the printing and typesetting.</p>
@@ -36,7 +36,7 @@ export default function Card(){
 
    
     <div class="xl:ml-36 xl:pl-2 xl:-mt-5 text-center">
-      <div class="bg-white xl:w-[270px] xl:p-6 rounded-md shadow-md xl:text-center pb-20">
+      <div class="bg-white xl:w-[270px] xl:p-6 rounded-md shadow-md xl:text-center pb-20 transition-transform duration-500 ease-in-out hover:scale-105">
         <img class="c1img mx-auto" src={Card4} alt="Card" />
         <h2 class="text-xl font-semibold mb-2">Perfect Analysis</h2>
         <p class="text-gray-600">Lorem Ipsum is simply dummy text of the printing.</p>
@@ -56,7 +56,7 @@ export default function Card(){
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's
                 standard dummy text ever since the 1500s.
             </p>
-            <a href="https://softek.radiantthemes.com/contact-01/" class="inline-block bg-gradient-to-r from-red-500 to-orange-500 text-white text-bold xl:px-10 xl:py-3 px-10 py-3 rounded hover:bg-red-600 xl:mt-2 mt-5">Discover
+            <a href="https://softek.radiantthemes.com/contact-01/" class="inline-block bg-gradient-to-r from-red-500 to-orange-500 text-white text-bold xl:px-10 xl:py-3 px-10 py-3 rounded hover:bg-red-600 xl:mt-2 mt-5 transition-transform duration-500 ease-in-out hover:scale-105">Discover
                 More</a>
         </div>
     </div>

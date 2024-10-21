@@ -5,16 +5,6 @@
 header ul li{
   @apply px-5
 }
-.col-class {
-  display: flex;              
-  flex-direction: column;    
-  color: #6b7280;             
-  position: fixed;            
-  top: 5rem;                 
-  background-color: #eff6ff;  
-  height: 33.333%;  
-  margin-left: -30px;          
-}
 .bg-blue-600{
   height: 600px;
   width:1350px;
@@ -283,13 +273,9 @@ header ul li{
   transition: box-shadow 0.2s ease; 
   margin-right:-20px;
   margin-left:300px;
+
 }
-.pa{
-  padding-bottom: -10px;
-  margin-bottom: -8px;
-  margin-left: -2px;
-}
-.mo-nav{
-    @apply fixed top-0;
-}
+
+
+
   
